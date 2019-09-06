@@ -1,0 +1,4776 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>酒仙网</title>
+   <!--  <script typet="text/javascript" src="http://code.jquery.com/jquery-3.2.1min.js"></script> -->
+   <script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<style>
+        {
+        font-family:微软雅黑;
+        margin-left: 0px;  
+        padding: 0px;
+        font-size: 13px;
+        text-indent: center
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        a,span {
+            text-decoration: none;
+            font-size: 13px;
+            color: #999;
+
+        }
+        body{
+            background: #f9f9f9
+        }
+
+        .top{
+            height: 26px;
+            background: #f2f2f2
+            line-height:26px;
+        }
+        .main{
+            width: 1390px;
+            margin: 0 auto;
+            line-height: 26px;
+            color: #999;
+        }
+            
+        
+    .main-left{
+        float: left；        
+        left: -1200px;
+        position: relative;
+        right: -60px; 
+        
+    }     
+   
+    .main-right{
+        float: right; 
+        position: relative;
+        left: -150px;
+    }
+
+    .main-right .ceo{
+        color: #c00;
+    }
+    .main-right .pre {
+        width: 15px;
+        height: 15px;
+        padding-left: -15px;
+    }
+    .main-right .shouji{
+      background:  #c00;
+      color: #fff; 
+      padding: 0 5px;
+      border-radius: 2px;
+      width: 126px;
+    }
+    .shouji:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    /*background-color: yellow;*/
+    }
+        
+    .main-right .cart{
+        width: 15px;
+        height: 15px;
+        background: url("img/public-24.png") no-repeat  -18px 5px;
+        padding-left: 15px;
+    }
+    .main-right .per {
+        width: 15px;
+        height: 15px;
+        background: url("img/public-24.png") no-repeat  -62px 5px;
+        padding-left: 15px;
+    }
+    .main-right .web {
+        width: 15px;
+        height: 15px;
+        background: url("img/public-24.png") no-repeat -80px 5px;
+        padding-left: 15px;
+    }
+    .main-right .kefu{
+        width: 15px;
+        height: 89px;
+        background: url("img/public-24.png") no-repeat -92px -262px  ;
+        padding-left: 12px;
+    }
+    .banner img{
+        display: block;
+        text-align: center;
+        margin-left: -3100px;
+        position:absolute; left:50%; margin-left:-960px; width:1640px;padding-left: -10px
+         }
+    .logo img{
+        width: 100px;
+        height: 200px;
+        display: block;
+        text-align: center;
+        cursor:pointer;  /*鼠标移入小手*/
+       /* margin-left: -3100px;*/
+        /*position:absolute; left:50%; margin-left:-960px; width:1640px;padding-left: -10px*/
+         }
+    .main .left span,a{
+            margin-right: 2px;
+        } 
+        
+    .banner{
+       width: 1320px;
+       overflow: x-hidden;
+
+       padding-left: -10px;
+       overflow-x:hidden;overflow-y:auto;
+   }
+    .main-right .jiuxian{
+        /*float: left;*/
+        width: 100px;
+        height: 25px;
+        padding-left: 16px;
+        background: url("img/public-24.png") no-repeat -112px 4px  ;
+        text-decoration: underline;
+    }
+    .main-right  li{ 
+        width: 67px;/**宽度*/
+        margin: 3px ;
+       /* border: 1px solid #fff;/**边框*/
+        background-color: #fff;
+        /*border-radius: 6px;/**圆角*/*/
+        /*box-shadow: 0 1px 1px #777;/**阴影：水平 垂直 模糊距离 模糊颜色*/
+        padding: 0;/**内边距*/
+        list-style: none;/**去掉小圆点*/
+        font-color: #f2f2f2;
+        
+        /*display:inline-block;*/
+        }
+     .main-right .mydropdwon{
+        /*display: none;*/
+        padding: 2px;
+        /*color: #999;*/
+        background: #ffffff;
+        text-decoration: none;/**去掉下划线*/        
+        position: absolute; 
+        /*top: -13px;*/
+        z-index: 999; /* 漂浮在图片上面*/   
+        width: 72px;
+        height: auto;
+        background: #fff;
+        margin-top: -6px;     
+        display: none;
+        }
+
+       .main-right .top-one:hover{
+        color:#c40000;
+        background-color:#fff;
+       }
+       .mydropdwon li a:hover{
+        text-decoration: underline;
+         cursor:pointer;
+         color:#c40000;
+        
+       } 
+
+   /* .main-right {  
+        display: none;
+    }*/
+    .top-one{
+        float: left;
+        width: 74px;
+        height: 26px;
+        /*margin-left: -2px;*/
+    }
+    /*.main-right .top-one:hover{
+     text-decoration:underline;
+     color:#c40000;
+    }    */
+        
+    .top-one:hover .mydropdwon{
+        display: block;
+    }
+
+                
+    
+    
+    /*.main-right li ul{
+               /* display: none;*/
+                visibility: hidden;/**二级菜单隐藏显示*/
+                position: relative;/**绝对定位*/
+                list-style: none;
+                top: 38px;
+                left: 0;
+                z-index: 1;
+                padding: 0;
+                background-color: #444;
+                background-image: linear-gradient(#444, #111);
+                box-shadow: 0 -1 0 rgba(255, 255, 255, 3);
+                border-radius: 3px;
+                opacity: 0;/**刚开始设为透明*/
+                margin: 20px 0 0 0;
+                transition: all .2s ease-in-out;/**二级菜单动画效果*/
+    
+
+    /*.main-right .myjiu:hover .ul  {
+      display: block;*/
+     /* visibility: visible;*/
+  }
+    /*.main-right ul li a :hover >span*
+
+            {
+                opacity: 1;
+                visibility: visible;
+                margin: 0;
+            }
+    .main-right ul{
+                display:none
+            /*}
+
+        /*width: -5px;
+        height: -15px;
+        /*padding-left: -10px;*/
+        
+        /*background-position: -59px 5px;*/
+        /*display: none;*/
+       /*background-position:top right;*/   */
+
+    /*  width: 0;
+      height: 0;
+      border-top: 20px solid #ccc;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+        */
+       }
+    /*.main-right .mydropdown{
+        position: absolute;
+        width: 100px; 
+        height: 200px;
+        background: #00f;
+        display: none;*/
+       }
+    .midheader{
+        width: 1390px;
+        min-width: 1000px;
+        margin-left: -90px;
+        margin-right: -80px;
+
+
+
+    }
+
+    .midheaderH3{
+        width: 2000px;
+        height: 125px;
+       /* margin-left: 10px；*/
+        margin-top: 65px ;
+        background: rgba(265,255,255);
+
+    }
+
+    
+    .headerlogo{
+        width: 300px;
+        height: 100px;
+        float: left;
+        display: inline-block;
+        margin: 0 auto;
+        /*overflow: hidden;*/
+        margin-left: 90px;
+        margin-top: 20px;
+        cursor:pointer;
+    }
+
+    .headerlogo.log1{
+        /*width: 107px;
+        height: 65px;*/
+        /*margin-right: 10px;  
+        float: left; 
+        display: inline-block;*/
+         
+    }
+    /*.headerlogo div.p{
+        float: left;
+        text-indent: left;
+        display: inline-block;*/
+         
+    }
+    /*.log2{
+        float: left;
+        text-align: left;
+        display: block;
+    }*/
+    .midheader.p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        cursor:pointer;
+
+
+    }
+    .headerlogo .p1 .p2{
+       display: inline-block
+        float: left;
+        cursor:pointer;
+    }
+     .heardSearch{
+    width: 340px;
+    float: left;
+    display: inline-block;
+    margin-top:35px;
+}
+   /* .midheaderH3 .searchHome{
+        margin: 13px 0 0 0;
+        display: inline-block;
+        position: relative;
+        margin-left: 596px;
+        position: relative;*/
+
+    
+
+
+    
+
+/*.heardSearch {
+    height: 32px;
+    border: 3px solid #c00;
+    position: relative;
+    z-index: 222;*/
+
+/*.search-top*/
+.search-form {    
+    width: 441px /*!important*/;    /*外面红色外框*/
+    height: 22px;
+    float：left；
+}
+ .search-top{
+    height: 32px;
+    width: 530px;
+    border: 3px solid #c00;
+    position: relative;
+    z-index: 222;
+}
+.search-form:focus {  
+    outline: none;   /*取消内边框的蓝色边框*/
+    /*border: 1px solid #58b195;*/
+    /*width: 451px;
+    height: 26px;*/
+    }
+    .search-btn{
+
+
+    width: 75px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 微软雅黑;
+    float: right;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    background: rgb(204, 0, 0);
+    }
+    .search-form  {
+     width: 444px;    /*里面内框
+    height: 22px;*/
+    line-height: 22px;
+    padding: 5px;
+    border: 0 none;
+    color: #666;
+    float: left;
+   /* float：none；*/
+    }   
+    .searchHome{
+    width: 363px;
+    float: left;
+    height: 64px;
+    /*margin: 33px 0 0 0;*/
+    /*display: inline-block;*/
+    margin-left: 560px;
+    margin-top: -30px;
+    }
+    .search-bottom{
+        width:620px; /*540px;*/
+        height: 60px;
+        /*padding-top:5px;*/
+        float: left;
+        margin-left:-680px;
+        margin-top: -50px;
+        /*padding-left: -40px;*/
+    }  /* 第三行鼠标悬停变色*/
+    .search-bottom li:hover{
+        color: red;
+        text-decoration: underline; 
+    }
+    .search-bottom ul{
+        list-style: none;
+        float: right;
+       
+    }
+    .search-bottom ul li{
+        float:left;
+      /*  margin-right: 8px;*/
+        line-height:18px;
+        padding: 0 2px;
+        position: relative;
+        left: -80px;
+        border-right:1px solid gray;
+        /*padding-left: 6px;*/
+        margin-right: 6px;
+        padding-right:16px;
+        margin-left: 3px;
+        font-size:  12px;
+        cursor:pointer;
+    }
+    .navgood{
+       
+        width: 100%;
+        height: 34px;
+        background: #900;
+        margin-left: -10px;
+        margin-top: -10px;
+        
+    }
+    
+    .nav2 h2{
+        margin-left: 35px;
+        width: 193px;
+        height: 34px;
+        line-height: 34px;
+        background: #ce171f;
+        text-align: center;
+        cursor: pointer;
+        font-family: "微软雅黑";
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff;
+        font-weight: 600;
+        box-shadow: 4px 2px 5px rgba(0,0,0,0.2);
+    /*margin: 0 auto;*/
+     }
+
+     .navgood .nav1{
+     width: 1000px;
+     height:34px;
+     /*margin-left: 300px*/
+     }
+     
+     .navgood .nav2{
+        width: 190px;
+        height: 34px;
+        margin-left: -1px;    
+
+     
+     }
+     .navlist{
+        /*height: 34px;*/
+        padding-left: 19PX;
+        margin-left: 213px;
+        margin-top: -34px;
+        width: 900px;
+       /* display:inline-block;*/
+     }
+     .navlist li {
+        
+         display:inline-block;
+         line-height: 34px;
+         text-align: center;
+         width: auto;
+         height: 34px;
+         margin-left: -6px;
+         /*margin-right:  15px;*/
+
+
+
+         
+    }
+    .navlist li:hover {
+        
+       background-color:#b40c10;
+    }
+    .navlist li a{
+         color: #fff;
+         font-size: 15px;
+         padding: 0 10px;
+         border-right: 1px solid gray;
+         cursor: pointer;
+         padding-right: 20px;
+         text-align: center;
+         margin-left: 9px;         
+       }  
+     /*第四列 字体悬停背景变为黄色*/
+    }
+    /*li:hover{
+        background-color:#b40c10;
+        color: green;
+
+    }*/
+    .navlist li home-one{
+         width: 60px;
+         height: 30px;
+         background: #b40c10;
+         /*border: 1px solid #c00;*/
+         background: #b40c10;
+         border-right: 1px solid gray;
+         /*margin-left: -10px;*/
+         /*padding-left: 20px;*/
+    }
+    .middle-leftbox{
+         position: relative;
+         width: 153px;
+         height: 470px;
+         background: #ffffff;
+         margin-left: 35px;
+         margin-top: -14px;
+         font-size:  12px;
+         color:  #666;
+         z-index: 999;
+
+    }
+   /* 左边悬浮 one*/
+   .left-one-erji{
+        width: 570px;
+        height: 467px;
+        position: relative;
+        left: 177px; 
+        top:-87px;
+        display: none;
+        z-index: 999;
+        background: green;
+   }
+   .left-one-two{
+        width: 60px;
+        height: 450px;
+        padding: 10px 10px 10px 20px;
+        line-height: 22px;
+        text-align: right;
+        border-top: 1px solid #f1f1f1;
+        background:#f1f1f1;
+       }
+    .zuida{
+        padding-bottom: 30px;
+
+   }
+
+    .left-one-three{
+        margin-top: -471px;
+        margin-left: 90px;
+        width:260px;
+        height: 469px;
+        /*padding: 10px 10px 10px 20px;*/
+        line-height: 22px;
+        /*text-align: right;*/
+        border: 1px solid #f1f1f1;
+        background:#ffffff;
+        
+   }
+   .left-one-three a.hot{
+        color: #f60;
+   }
+   .left-one-three a.hot:hover{
+        color: #f60;
+   }
+   .left-one-three-one{
+        width: 250px;
+        height: 60px;
+       /* margin-top: -30px; */
+        padding-top:10px ;
+
+        /*padding-left: 10px; 
+        padding-right: 10px;*/
+        border-bottom: 1px dotted #ccc;
+    }
+   .left-one-three-one a{  
+        /*width: 200px;
+        height: 80px;*/
+        /*padding: 0px 0px 10px 10px;*/
+        /*background: red;*/
+
+        border-right:1px solid #999999;
+        margin-left: 3px;
+        /*margin-right: 2px;  */  
+        padding-right: 4px; 
+        white-space:normal;
+        margin-bottom: 5px;
+        line-height: 22px;
+        max-height: 16px;
+    
+    
+   }
+   .left-one-three-two{
+        width: 250px;
+        height: 30px;
+       /* margin-top: -30px; */
+        padding-top:10px ;
+
+        /*padding-left: 10px; 
+        padding-right: 10px;*/
+        border-bottom: 1px dotted #ccc;
+    }
+   .left-one-three-two a{
+        /*width: 200px;
+        height: 80px;*/
+        /*padding: 0px 0px 10px 10px;*/
+        /*background: red;*/
+        border-right:1px solid #999999;
+        margin-left: 3px;
+        /*margin-right: 2px;  */  
+        padding-right: 4px; 
+        white-space:normal;
+        margin-bottom: 5px;
+        line-height: 22px;
+        max-height: 16px;
+    
+    
+   }
+   .left-one-three-three{
+        width: 250px;
+        height: 30px;
+       /* margin-top: -30px; */
+        padding-top:10px ;
+
+        /*padding-left: 10px; 
+        padding-right: 10px;*/
+        border-bottom: 1px dotted #ccc;
+    }
+   .left-one-three-three a{
+        /*width: 200px;
+        height: 80px;*/
+        /*padding: 0px 0px 10px 10px;*/
+        /*background: red;*/
+        padding-right: 4px;
+        border-right:1px solid #999999;
+        margin-left: 3px;
+        /*margin-right: 2px;  */  
+        white-space:normal;
+        margin-bottom: 5px;
+        line-height: 22px;
+        max-height: 16px;   
+    
+   }
+   .left-one-three-four{
+        width: 260px;
+        height: 30px;
+       /* margin-top: -30px; */
+        padding-top:10px ;
+
+        /*padding-left: 10px; 
+        padding-right: 10px;*/
+        border-bottom: 1px dotted #ccc;
+    }
+   .left-one-three-four a{
+        /*width: 200px;
+        height: 80px;*/
+        /*padding: 0px 0px 10px 10px;*/
+        /*background: red;*/
+        border-right:1px solid #999999;
+        margin-left: 3px;
+        /*margin-right: 2px;  */  
+        padding-right: 4px;
+        white-space:normal;
+        margin-bottom: 5px;
+        line-height: 22px;
+        max-height: 16px;  
+    
+   }
+   .left-one-three a:hover{
+        color:#cc0001;
+   }
+   .left-one-three-five{
+        width: 250px;
+        height: 30px;
+       /* margin-top: -30px; */
+        padding-top:10px ;
+
+        /*padding-left: 10px; 
+        padding-right: 10px;*/
+       /* border-bottom: 1px dashed #999999;*/
+    }
+   .left-one-three-five a{
+        /*width: 200px;
+        height: 80px;*/
+        /*padding: 0px 0px 10px 10px;*/
+        /*background: red;*/
+        border-right:1px solid #999999;
+        margin-left: 3px;
+        /*margin-right: 2px;  */  
+        padding-right: 3px; 
+        white-space:normal;
+        margin-bottom: 5px;
+        line-height: 22px;
+        max-height: 16px;
+    
+    
+   }
+   .left-one-four{
+        margin-top: -235px;
+        margin-left: 260px;
+        /*width:260px;*/
+        height: 400px;
+        /*padding: 10px 10px 10px 20px;*/
+        line-height: 22px;
+        /*text-align: right;*/
+        /*border-top: 1px solid #f1f1f1;*/
+        background:#ffffff;
+   }
+   /*.left-one-two h4{
+    padding:3px;
+   }*/
+   .left-one-erji p{
+        width: 300px;
+        height: 470px;
+        /*position: relative;
+        left: 186px;
+        top:-76px;*/
+    
+   }
+    /*鼠标移入 背景颜色变为黄色*/
+   .middle-box-one:hover{
+        padding-left: 0px; 
+        border-left:2px solid#ce171f;
+        background:#f1f1f1;
+   }
+   /*.middle-box-one:after{
+        content:"0";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        }*/
+
+    .left-one :hover .left-one-erji {
+
+       display: block;
+   }
+
+   /*左侧导航栏1栏*/
+    .middle-box-one{
+        height: 81px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style-type:none;
+        margin-left: -39px;
+        width: 190px;
+        padding-left: 2px;
+    }
+    .left-one{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;        
+    }
+    .left-one-down{
+        width: 176px;
+        height:45px;
+    }
+    .middle-leftbox li h3{
+        line-height: 32px;
+        height: 32px;
+        font-size: 14px;
+        overflow: hidden;
+        font-weight: normal;
+        padding-top: 1px;
+        color: #333;
+        list-style-type:none;
+        margin-left: 26px;
+        }
+    .middle-leftbox li p{
+        width: 170px;
+        height: 20px;
+        overflow: hidden;
+        margin-top: -12px;
+        padding: 0 1px;
+        }
+
+        /*左侧导航栏2栏*/
+
+    .middle-box-two{
+        height: 81px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style-type:none;
+        margin-left: -39px;
+        width: 190px;
+        margin-top: -15px;
+        padding-left: 2px;
+
+
+    }
+    .left-two{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+       
+    }
+    .left-two-down{
+        margin-top: -18px;
+        width: 176px;
+        height:45px;
+    }
+    .left-two-down li p{
+       /* margin-top: -3px;*/
+        width: 170px;
+        height: 20px;
+        overflow: hidden;
+        margin-top: -12px;
+        /* border-left: 3px solid #fff; */
+        padding: -3px;
+        border-left: 4px;
+    }
+    
+        /*左边悬浮 2栏*/
+    .left-two-erji{
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 176px;
+        top:-162px;
+        display: none;
+        z-index: 999; 
+    }
+    .left-two-erji img{
+        padding-left: 3px;
+    }
+
+
+   
+   .left-two-erji p{
+        width: 300px;
+        height: 470px;
+    /*position: relative;
+    left: 186px;
+
+    top:-76px;*/
+    
+   }
+
+   /*鼠标移入 背景颜色变为黄色*/
+    .middle-box-two:hover{ 
+        background-color: #f1f1f1; 
+        cursor: pointer;
+        border-left:2px solid#ce171f;
+        padding-left: 0px;
+   } 
+   /*.left-two-erji:after{
+        content:"0";
+        display: bloc
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        }*/
+    .middle-box-two :hover .left-two-erji{
+      
+       display: block;
+   }
+   /*左侧导航栏3栏*/
+   .middle-left-box-three{
+        height: 81px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style:none;
+        margin-left: -39px;
+        margin-top: -15px;
+        width: 190px;
+        padding-left: 2px;
+
+    }
+
+    .left-three{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+       
+    }
+    .left-three-down{
+        margin-top: -18px;
+        width: 176px;
+        height:45px;
+    }
+    .middle-left-box-three:hover{ 
+        background-color: #f1f1f1; 
+        cursor: pointer;
+        border-left:2px solid#ce171f;
+        padding-left: 0px;
+   } 
+   .left-three-erji{
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 176px;
+        top:-243px;
+        display: none;
+        z-index: 999; 
+    }
+    .left-three-erji img{
+        padding-left: 3px;
+    }
+    .middle-left-box-three :hover .left-three-erji{
+      
+       display: block;
+   }
+    
+    /*左侧导航栏4栏*/
+    .middle-box-four{
+        height: 81px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style:none;
+        margin-left: -39px;
+        margin-top: -15px;
+        width: 190px;
+        padding-left: 2px;
+
+    }
+
+    .left-four{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+       
+    }
+    .left-four-down{
+        margin-top: -18px;
+        width: 176px;
+        height:45px;
+    }
+    .middle-box-four:hover{ 
+        background-color: #f1f1f1; 
+        cursor: pointer;
+        border-left:2px solid#ce171f;
+        padding-left: 0px;
+    } 
+    .left-four-erji{
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 176px;
+        top:-324px;
+        display: none;
+        z-index: 999; 
+    }
+    .left-four-erji img{
+        padding-left: 3px;
+    }
+    .middle-box-four :hover .left-four-erji{
+      
+       display: block;
+   }
+    /*左侧导航栏5栏*/
+    .middle-box-five{
+        height: 81px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style:none;
+        margin-left: -39px;
+        margin-top: -15px;
+        width: 190px;
+        padding-left: 2px;
+
+    }
+
+    .left-five{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+       
+    }
+    .left-five-down{
+        margin-top: -18px;
+        width: 176px;
+        height:45px;
+    }
+    .middle-box-five:hover{ 
+        background-color: #f1f1f1; 
+        cursor: pointer;
+        border-left:2px solid#ce171f;
+        padding-left: 0px;
+    } 
+    .left-five-erji{
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 176px;
+        top:-405px;
+        display: none;
+        z-index: 999; 
+    }
+    .left-five-erji img{
+        padding-left: 3px;
+    }
+    .middle-box-five :hover .left-five-erji{
+      
+       display: block;
+   }
+    /*侧导航栏6栏*/
+    .middle-box-six{
+        height: 61px;
+        border-bottom: 1px solid #e4e4e4;
+        list-style:none;
+        margin-left: -39px;
+        margin-top: -15px;
+        width: 190px;
+        padding-left: 2px;
+
+    }
+
+    .left-six{
+        margin-left: -10px
+        width: 163px;
+        height: 81px;
+        padding: 0 10px;
+       
+    }
+    .left-six-down{
+        margin-top: -18px;
+        width: 176px;
+        height:45px;
+    }
+    .middle-box-six:hover{ 
+        background-color: #f1f1f1; 
+        cursor: pointer;
+        border-left:2px solid#ce171f;
+        padding-left: 0px;
+   } 
+   .left-six-erji{
+        width: 600px;
+        height: 300px;
+        position: relative;
+        left: 176px;
+        top:-466px;
+        display: none;
+        z-index: 999; 
+    }
+    .left-six-erji img{
+        padding-left: 3px;
+    }
+    .middle-box-six :hover .left-six-erji{
+      
+       display: block;
+   }
+
+   /*轮播图*/
+   .lunbotu-box li {
+
+        list-style:none;
+        width:100%;
+        height:470px;
+        position:absolute;
+        left: -60px;top: -20px;
+   
+        /*margin-left: -38px;
+        margin-top: -16px;*/
+        display:none;
+    }
+    .lunbotu-box img {
+        width:100%;
+        height:470px;
+    }
+    .lunbotu-box {
+        width:100%;
+        height:470px;
+        /*border:1px solid red;*/
+        position:relative;
+        top:4px;
+        /*left:20%;
+*/
+    }
+    .lunbotu-min {
+        position:absolute;
+        top: 410px;
+        left: 760px;
+        letter-spacing:2px;
+    }
+    .lunbotu-min span {
+        display:inline-block;
+        width:23px;
+        height:23px;
+        border-radius:50%;
+        background:red;
+        text-align:center;
+        color:white;
+        box-shadow: 0 0 3px;
+        cursor: pointer;
+    }
+    .lunbotu-box  a{
+        position:absolute;
+        width:50px;
+        height:30px;
+        border-radius:10px;
+        background:blue;
+        text-align:center;
+        font-size:20px;
+    }
+    .left {
+        top:140px;
+    }
+    .right {
+        top:140px;
+        left:350px;
+    }
+    .middle-box-three{
+        position:relative;
+        top: -20px;
+        left:  1090px;
+        width:190px;
+        height:470px;
+        z-index: 999;
+
+    }
+      
+    .middle-box-three img{
+        /*position: absolute;*/
+        width: 190px;
+        height: 156px;
+        margin-bottom:-6px;
+        /*isplay: inline-block;*/
+    }
+
+    /*抢购菜单*/
+    .middle-box-three{
+        /*width: 100%;*/
+        position: relative;
+       /* z-index: -1;*/
+    }
+    .submenu-one{
+        float: left;
+        margin-left: 22PX;
+        width: 920px;
+        background: #fff;
+        height: 499px
+    }
+    .submenu-one-two{
+        width: 920px;
+        /*overflow: hidden;*/
+        height: 38px;
+        position: relative;
+        }
+        .submenu-one-two ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    } 
+    .submenu-one-two li{
+        float: left;
+        width: 182px;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;
+        border-bottom: 1px solid #ececec;
+        border-top: 2px solid #ececec;
+        height: 35px;
+        /*position: absolute;*/
+        /*top:0px;left: 200px;*/
+        cursor: pointer;
+        text-align: center;
+        line-height: 35px;
+        font-size: 16px;
+        color: #666;
+        font-family: "微软雅黑";
+        background: #f9f9f9;
+    }
+    /*抢购二级菜单*/
+    .submenu-two{
+        float: left;
+        /*margin-left: -200px;*/
+        border: 1px solid #ececec;
+        border-top: none;
+        height: 460px;
+        overflow: hidden;
+    }
+    .submenu-two-one1{
+        width: 918px;
+        height: 442px;
+        margin: 0 auto;
+        padding: 10px 0;
+        overflow: hidden;
+        /*position: relative;*/
+        /*display:none;*/
+
+    }
+    
+      /* products 产品1-1*/
+    
+    .submenu-two-one1 li{
+        float: left;
+        width: 182px;
+        height: 196px;
+        margin-top: 5px;
+        background:#ffffff;
+        border: none;
+        /*display: none;*/
+    }
+    .products-one-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-one-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-one-price{
+        margin-left: -100px;
+        padding-top: -6px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+       /* products 产品1-2*/
+    .products-two-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-two-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-two-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-3*/
+    .products-three-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-three-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-three-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-4*/
+        .products-four-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-four-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-four-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-5*/
+    .products-five-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-five-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-five-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-6*/
+    .products-six-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-six-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-six-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-7*/
+    .products-seven-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-seven-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-seven-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-8*/
+    .products-eight-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-eight-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-eight-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-9*/
+    .products-nine-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-nine-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-nine-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品1-10*/
+    .products-ten-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-ten-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products-ten-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    .submenu-one-two li.active{
+        color:#cc0000;
+        background-color:#fff;
+        border-top-color: #cc0000;
+        border-bottom: none;
+    }    
+        /*疯狂抢购2-爆款抢购 */
+    
+    .submenu-er-one2{
+        width: 918px;
+        height: 442px;
+        margin-top: -464px;
+        padding: 10px 0;
+        overflow: hidden;
+        /*position: relative;*/
+    }
+      /* products 产品2-1*/
+    .submenu-er-one2 ul{
+        width: 918px;
+        height: 196px;
+        display: none;
+    }
+    .submenu-er-one2 li{
+        float: left;
+        width: 182px;
+        height: 196px;
+        margin-top: 5px;
+        background:#ffffff;
+        border: none;
+        /*display: none;*/
+    }
+    .products2-one-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-one-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-one-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+       /* products 产品2-2*/
+    .products2-two-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-two-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-two-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-3*/
+    .products2-three-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-three-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-three-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-4*/
+    .products2-four-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-four-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-four-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-5*/
+    .products2-five-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-five-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-five-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-6*/
+    .products2-six-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-six-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-six-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-7*/
+    .products2-seven-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-seven-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-seven-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-8*/
+    .products2-eight-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-eight-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-eight-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-9*/
+    .products2-nine-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-nine-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-nine-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品2-10*/
+    .products2-ten-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-ten-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products2-ten-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+   
+    /*疯狂抢购3-爆款抢购 */
+    
+    .submenu-san-one3{
+        width: 918px;
+        height: 442px;
+        margin-top: -464px;
+        padding: 10px 0;
+        overflow: hidden;
+        /*position: relative;*/
+    }
+      /* products 产品3-1*/
+    .submenu-san-one3 ul{
+        width: 918px;
+        height: 196px;
+        display: none;
+    }
+    .submenu-san-one3 li{
+        float: left;
+        width: 182px;
+        height: 196px;
+        margin-top: 5px;
+        background:#ffffff;
+        border: none;
+        /*display: none;*/
+    }
+    .products3-one-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-one-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-one-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+       /* products 产品3-2*/
+    .products3-two-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-two-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-two-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-3*/
+    .products3-three-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-three-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-three-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-4*/
+    .products3-four-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-four-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-four-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-5*/
+    .products3-five-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-five-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-five-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-6*/
+    .products3-six-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-six-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-six-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-7*/
+    .products3-seven-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-seven-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-seven-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-8*/
+    .products3-eight-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-eight-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-eight-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-9*/
+    .products3-nine-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-nine-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-nine-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品3-10*/
+    .products3-ten-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-ten-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products3-ten-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+
+       /*疯狂抢购4-爆款抢购 */
+    
+    .submenu-si-one4{
+        width: 918px;
+        height: 442px;
+        margin-top: -464px;
+        padding: 10px 0;
+        overflow: hidden;
+        /*position: relative;*/
+    }
+      /* products 产品4-1*/
+    .submenu-si-one4 ul{
+        width: 918px;
+        height: 196px;
+        display: none;
+    }
+    .submenu-si-one4 li{
+        float: left;
+        width: 182px;
+        height: 196px;
+        margin-top: 5px;
+        background:#ffffff;
+        border: none;
+        /*display: none;*/
+    }
+    .products4-one-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-one-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-one-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+       /* products 产品4-2*/
+    .products4-two-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-two-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-two-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-3*/
+    .products4-three-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-three-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-three-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-4*/
+    .products4-four-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-four-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-four-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-5*/
+    .products4-five-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-five-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-five-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-6*/
+    .products4-six-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-six-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-six-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-7*/
+    .products4-seven-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-seven-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-seven-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-8*/
+    .products4-eight-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-eight-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-eight-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-9*/
+    .products4-nine-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-nine-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-nine-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品4-10*/
+    .products4-ten-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-ten-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products4-ten-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    /*疯狂抢购5-爆款抢购 */
+    
+    .submenu-wu-one5{
+        width: 918px;
+        height: 442px;
+        margin-top: -464px;
+        padding: 10px 0;
+        overflow: hidden;
+        /*position: relative;*/
+    }
+      /* products 产品5-1*/
+    .submenu-wu-one5 ul{
+        width: 918px;
+        height: 196px;
+        display: none;
+    }
+    .submenu-wu-one5 li{
+        float: left;
+        width: 182px;
+        height: 196px;
+        margin-top: 5px;
+        background:#ffffff;
+        border: none;
+        /*display: none;*/
+    }
+    .products5-one-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-one-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-one-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+       /* products 产品5-2*/
+    .products5-two-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-two-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-two-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-3*/
+    .products5-three-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-three-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-three-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-4*/
+    .products5-four-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-four-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-four-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-5*/
+    .products5-five-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-five-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-five-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-6*/
+    .products5-six-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-six-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-six-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-7*/
+    .products5-seven-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-seven-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-seven-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-8*/
+    .products5-eight-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-eight-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-eight-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-9*/
+    .products5-nine-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-nine-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-nine-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+        /* products 产品5-10*/
+    .products5-ten-three{
+        margin-top: -10px;
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-ten-four{
+        width: 160px;
+        padding: 0 2px;
+        height: 18px;
+        line-height: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .products5-ten-price{
+        margin-left: -100px;
+        font-size: 12px;
+        color: #CD0100;
+        font-weight: normal;
+        line-height: 18px;
+        display: inline;
+        vertical-align: middle;
+    }
+
+    /*products-right 产品右边*/
+    .products-right{
+        width: 270px;
+        height: 500px;
+        float: right;
+       /* background: #666666;*/
+        margin-right: 106PX;
+    }
+    .products-right-one{
+        width: 270px;
+        height: 140px;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .products-right-one1{
+        /*width:300px;*/ 
+        height:35px;
+        margin-top: -15px;
+        margin-left: -40px;
+    }
+    ul li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .products-right-one1 li{
+        font-size: 16px;
+        font-family: "微软雅黑";
+        color: #666;
+        text-align: center;
+        width: 133px;
+        /*height: 35px;*/
+        border: 1px solid #ececec;
+        line-height: 35px;
+        float: left;
+        top: 0;
+        cursor: pointer;
+        background: #f9f9f9;
+    }
+    /*products-right 产品右边 下面第一个*/
+    .products-right-one3{
+        border: 1px solid #ececec;
+        border-top: none;
+        height: 94px;
+        padding-top: 10px;
+    }
+    .products-right-one31{
+        width: 298px;
+        margin: 0 auto;
+    }
+    .products-right-one31 ul{
+        width: 298px;
+        margin: 0 auto;
+        margin-left: -40PX;
+        /*display: none;*/
+    }
+    .products-right-one31 li{
+        float: left;
+        width: 114px;
+        margin-left: 10px;
+        display: inline;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 28px;            
+    }
+    .products-right-one31 li a{
+            color: #666;
+            
+    }
+    /*products-right 产品右边 下面第二个*/
+    .products-right-one4{
+        border: 1px solid #ececec;
+        border-top: none;
+        height: 94px;
+        padding-top: 10px;
+        margin-top: -100px;
+    }
+    .products-right-one41{
+        width: 298px;
+        margin: 0 auto;
+    }
+    .products-right-one41 ul{
+        width: 298px;
+        margin: 0 auto;
+        margin-left: -35PX;
+        display: none;
+    }
+    .products-right-one41 li{
+        float: left;
+        width: 114px;
+        margin-left: 10px;
+        display: inline;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        line-height: 28px;            
+    }
+    .products-right-one41 li a{
+            color: #666;
+            
+    }
+    .products-right-one li.on{
+        color:#cc0000;
+        background-color:#fff;
+        border-top-color: #cc0000;
+        border-bottom: none;
+        border-top: 2px solid #cc0000;
+        cursor: pointer;
+    }
+    
+    /* products-right 轮播图*/
+    .products-right-two{
+        margin-top: 10px;
+        width: 270px;
+        height: 159px;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .products-lunbotu-box {
+        width:268px;
+        height:157px;
+        /*border:1px solid red;*/
+        position:relative;
+    }
+    
+    .products-lunbotu-box ul{
+        width: 10000px;
+        height: 157px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+   .products-lunbotu-box li {
+
+    float: left;
+    width: 268px;
+    height: 178px;
+    position: relative;
+   
+    /*margin-left: -38px;
+    margin-top: -16px;*/
+    display:none;
+    }
+    .products-lunbotu-box li .img {
+       /* width:268px;
+        height:157px;*/
+        z-index:-10;
+    }
+    .products-lunbotu-min{
+        width: 100px; 
+        height: 30px;       
+        position:absolute;
+        top: 130px;
+        left: 20px;        
+        letter-spacing:3px;
+    }
+    .products-lunbotu-min span{
+        display:inline-block;
+        width:13px;
+        height:13px;
+        margin-left: -1px;
+        margin-top: 10px;
+        border-radius:50%;
+        background:red;
+        text-align:center;
+        color:white;
+        box-shadow: 0 0 3px;
+        cursor: pointer;
+    }
+    .products-lunbotu a{
+        position:absolute;
+        width:5px;
+        height:3px;
+        border-radius:10px;
+        background:blue;
+        text-align:center;
+        font-size:20px;
+    }
+    
+    /* products-right 轮播图2*/
+    .products-right-three{
+        margin-top: 10px;
+        width: 270px;
+        height: 180px;
+        background: #ffffff;
+        overflow: hidden;
+    }
+    .products-lunbotu-box2 {
+        width:268px;
+        height:180px;
+        /*border:1px solid red;*/
+        position:relative;
+    }
+    
+    .products-lunbotu-box2 ul{
+        width: 10000px;
+        height: 178px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+    }
+   .products-lunbotu-box2 li {
+
+        float: left;
+        width: 268px;
+        height: 178px;
+        position: relative;
+       
+        /*margin-left: -38px;
+        margin-top: -16px;*/
+        display:none;
+    }
+    .products-lunbotu-box2 img {
+        /*width:268px;*/
+        height:178px;
+        z-index:-10;
+    }
+    .products-lunbotu-min2{
+        position:absolute;
+        top: 10px;
+        left: 20px;
+        letter-spacing:2px;
+    }
+    .products-lunbotu-min2 span{
+        display:inline-block;
+        width:13px;
+        height:13px;
+        margin-left: -1px;
+        margin-top: 150px;
+        border-radius:50%;
+        background:red;
+        text-align:center;
+        color:white;
+        box-shadow: 0 0 3px;
+        cursor: pointer;
+    }
+    .products-lunbotu2 a{
+        position:absolute;
+        width:50px;
+        height:30px;
+        border-radius:10px;
+        background:blue;
+        text-align:center;
+        font-size:20px;
+    }
+
+    .top-two{
+        /*float: left;*/
+       /*display: inline;*/
+        width: 92px;
+        height: 17px
+
+    }
+    .erweima{          
+        width: 70px;
+        height: auto;
+        position: absolute;
+        right: 400px;
+        background: #fff;    
+        display: none;
+       z-index:9999;/* 漂浮在图片上面*/ 
+
+     }
+    .shouji:hover{
+        text-decoration: underline;
+        cursor:pointer;
+        /* color:#ff0000;*/        
+    } 
+    
+    /*第三个*/    
+    .top-three{
+       display: inline;
+        width: 70px;
+        padding: 1px;             
+    }
+
+    .top-nav{      
+        box-sizing: border-box;
+    }   
+
+
+    .top-daohang{       
+        width: 200px;
+        height: auto;
+        border: 2px solid #fff;/**边框*/
+        position: absolute;
+        right: 100px;
+        background: #fff;    
+        display: none;
+        z-index:9999; /*漂浮在图片上面 */
+        margin-top: -4px;
+
+    }
+   
+    /*第四个*/    
+    .top-four{
+        display: inline;
+        width: 50px;
+        padding: 1px;
+        /*height: 20px
+        margin-left:-10px;*/ 
+        box-sizing: border-box;       
+    }
+
+    .top-nav{      
+        box-sizing: border-box;
+    }
+
+    .top-kehu{
+        width: 70px;
+        height: auto;
+        padding-left: 6px;
+        border-left: 1px solid #ececec;
+        border-right: 1px solid #ececec;   
+        position: absolute;
+        top: 23px;
+        right: 157px;
+        z-index: 206;
+        background: #fff;
+        /*padding: 5px 0;*/
+        display: none;
+    }
+    .top-kehu a{
+        width: 72px;
+        text-align: center;
+    }
+
+    .kefu .top-fuwu{
+        box-sizing:border-box;
+
+    }
+   
+    .top-fuwu:hover{
+        text-decoration: underline;
+        cursor:pointer;
+        background-color: #fff;
+        border-color: #cc0000;
+        border-bottom: none;
+
+        /* border: 2px solid #fff;/**边框*/*/
+    }
+    .top-four:hover{
+       text-decoration:underline;
+       padding: 0;
+
+       /*background-color:red;*/
+       cursor:pointer;
+       border-left: 1px solid #f2f2f2;
+       border-right: 1px solid #f2f2f2;
+       background-color: #fff; 
+    }
+
+    
+
+
+    .top-nav-one{
+        width: 180px;
+        padding: 6px 3px 8px 20px;        
+        border-bottom: 1px solid #ededed;
+        overflow: hidden;
+        }       
+    .top-nav-one1 h3{
+        font-size: 14px;
+        font-family: 微软雅黑;
+        color: rgb(51, 51, 51);
+        font-weight: normal;
+    }
+    .top-nav-one2{
+        width: 160px;
+        margin-top: -10px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    .top-nav-one2 a{
+        height: 24px;
+        text-align: left;
+        width: 48px;
+        margin-right: 10px;
+        padding: 4px;
+        overflow: hidden;
+    }
+
+    .top-nav-two{
+        width: 160px;
+        padding: 6px 20px 8px 20px;
+        background: #f9f9f9;
+        
+        /*border-bottom: 1px solid #ededed;*/
+        overflow: hidden;
+        }       
+    .top-nav-two1 h3{
+        font-size: 14px;
+        font-family: 微软雅黑;
+        color: rgb(51, 51, 51);
+        font-weight: normal;
+    }
+    .top-nav-two2{
+        width: 186px;
+        margin-top: -3px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    .top-nav-two2 a{
+        height: 24px;
+        text-align: left;
+        width: 48px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .top-nav-two2 .jiugui{
+      margin-left: 10px;  
+    }
+    .top-nav-three{
+        width: 190px;
+        padding: 6px 2px 8px 20px;
+        
+        border-top: 1px solid #ededed;
+        overflow: hidden;
+        }       
+    .top-nav-three1 h3{
+        font-size: 14px;
+        font-family: 微软雅黑;
+        color: rgb(51, 51, 51);
+        font-weight: normal;
+    }
+    .top-nav-three2{
+        width: 179px;
+        margin-top: -10px;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    .top-nav-three2 a{
+        height: 24px;
+        text-align: left;
+        width: 46px;
+        margin-right: 8px;
+        overflow: hidden;
+    }
+    .top-nav-three2 .changjian{
+        margin-left: 15px;
+         /*color: red;*/
+    }
+    .top-nav-three2 .zhuce{
+        margin-left: -6px;
+       /* color: red;*/
+
+    }
+    .top-nav-four{
+        width: 180px;
+        padding: 6px 2px 8px 20px;        
+        border-top: 1px solid #ededed;
+        overflow: hidden;
+        background: #f9f9f9;
+        }       
+   
+    .top-nav-four .top-nav-four2{
+        /*color: #7777777;*/
+        padding-left: 5px;
+        font-weight: bold;
+        FONT-SIZE: 12px;
+        font-family: 微软雅黑;
+        color: rgb(51, 51, 51);
+    }
+    .top-nav-four2 span{
+        height: 24px;
+        text-align: left;
+        width: 46px;
+        margin-right: 8px;
+        overflow: hidden;
+    }
+     .top-daohang.top-daohang a:hover{
+        text-decoration: underline;
+        cursor:pointer;
+        color:#c40000;
+
+     }
+     .main-left a:hover{
+        text-decoration: underline;
+        cursor:pointer;
+        color:#c40000;
+
+     }
+     .top-three:hover{
+       text-decoration:underline;
+
+       /*background-color:red;*/
+       cursor:pointer;
+       padding: 0px;
+       border-left: 1px solid #f2f2f2;
+       border-right: 1px solid #f2f2f2;
+       background-color: #fff; 
+    }
+
+
+   /* .top-nav-two2 .jinkou{
+        margin-left: -2px;
+    }*/
+   </style>
+   <!-- <script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script> -->
+    <!-- <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/main.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    
+</head>
+<body style="overflow-x: hidden">
+      
+    <div class="top">
+        <div class="main">
+            <div class="main-left"> 
+                <span>欢迎来酒仙网!</span>
+                <a href="denglu.html">请登录</a>
+                <a href="zhuce.html">免费注册</a>
+
+            <div class="main-right">   
+              <div class="top-one">
+               <a href="" class="myjiu"> 我的酒仙 <i class="jiuxian"></i> </a> 
+                    <!-- <div class="mydropdwon"> -->
+                        <ul class="mydropdwon ">
+                            <li><a href=""> 我的订单</a></li>
+                            <li><a href=""> 物流跟踪</a></li>
+                            <li><a href=""> 我的优惠券</a></li>
+                          
+                        </ul>
+                   </div>
+                   
+                                
+                <!-- <div href=""class='jiuxian' style="block"> 
+                    <div>
+                        <span>我的酒仙 </span> <i class="myjiu"></i>
+                    </div>
+               
+                    <div class="mydropdwon"></div> -->
+
+              <!--   </a>   -->
+               <a href=""class='ceo '>CEO邮箱</a>
+                <a href=""class=' '><i class='cart'> </i>购物车0件</a>
+                <a href="" class='ceo'>CLUB会员</a> 
+                <!-- <div class="top-two"> -->
+                <span class='shouji '><i class='per '></i>手机逛酒仙网</span>
+                <div class="erweima">
+                <a href=""><img src="img/jxPho-code.jpg" width="80" height="80" >
+                </a>   
+                <!-- </div> -->
+                
+                </div>
+                <a href="">| 招商入驻 | </a>
+                <div class="top-three">
+                <a href="" class="top-nav"><i class="web"></i>网站导航</a> 
+                  
+                <div class="top-daohang">
+                    <div class="top-nav-one">
+                        <div class="top-nav-one1">
+                            <h3>购物</h3>
+                        </div>
+                        <div class="top-nav-one2">
+                            <a href="">白酒</a>
+                            <a href="">葡萄酒</a>
+                            <a href="">洋酒</a>
+                            <a href="">啤酒</a>
+                            <a href="">保健酒</a>
+                            <a href="">黄酒</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="top-nav-two">
+                        <div class="top-nav-two1">
+                            <h3>活动</h3>
+                        </div>
+                        <div class="top-nav-two2">
+                            <a href="">口粮专场</a>
+                            <a href="">进口馆</a>
+                            <a href="" class="jiugui">酒鬼酒</a>
+                            <a href="">老酒特卖</a>
+                            <a href="">新品发现</a>
+                            <a href="">值得买</a>
+
+                        </div>
+                        </div>
+
+                    <div class="top-nav-three">
+                         <div class="top-nav-three1">
+                            <h3>其他</h3>
+                        </div>
+                        <div class="top-nav-three2">
+                            <a href="">会员中心</a>
+                            <a href="">社区</a>
+                            <a href="" class="changjian">常见问题</a>
+                            <a href="">招商入驻</a>
+                            <a href="">酒类资讯</a>
+                            <a href="" class="zhuce">VIP注册</a>
+
+
+                   
+
+                </div>
+                </div>
+                <div class="top-nav-four">
+                         <div class="top-nav-four1">
+                            <span>咨询热线:</span>                        
+                            <b class="top-nav-four2">400-617-9999</b>
+                        </div>
+                            
+                         
+                   
+                </div>            
+                </div>
+
+           <!--   </div>  -->  
+            </div>
+               <!--  </div> -->
+                <div class="top-four">
+                <a href="" class="top-fuwu"><i class="kefu"></i> 客户服务</a>
+                <div class="top-kehu">
+                    <a href="">常见问题</a>
+                    <a href="">配送说明</a>
+                    <a href="">售后服务</a>
+                </div>
+                </div>
+                <span>客服热线：</span>
+                <span class='ceo'>400-617-9999</span> 
+            </div> 
+
+                </div>      
+        <div class="banner">          
+                <img src="img/public-21.jpg"  alt="888">  
+            </div> 
+            <div class="midheader" >  
+            <div class="midheaderH3 ">
+               <div class="headerlogo"> 
+                <p class="logo1">
+                  <a href=""><img src="img/logo1.png" width="137" height="65" >
+                  </a>
+                 
+                  
+                <!-- <p class="logo2"> -->
+                  <a href=""><img src="img/logo2.gif" width="137" height="65" >                      
+                  </a>
+                  </p>               
+
+                  </div> 
+                  <div class="heardSearch">
+                    <div class="search-top">
+                        <form action="" >
+                        <input  class="search-form" type="text" placeholder="酒仙特价"> 
+                        <input class="search-btn" type="submit" name="" value="搜&nbsp;索"> 
+                        <!-- <input id="area" name="area" type="hidden" value="31"> -->
+                        </form>                           
+                        </div>
+                    
+                      <div class="searchHome">
+                        <img src=" img/headerProPic1.png"> 
+                          <div class="search-bottom">
+                              <ul>
+                                  <li>茅台</li>
+                                  <li>五粮液</li>
+                                  <li>酒鬼</li>
+                                  <li>拉菲</li>
+                                  <li>郎酒</li>
+                                  <li>黄尾袋鼠</li>
+                                  <li>水井坊</li>                                                      
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="navgood">
+                    <div class="nav1">
+                    <div class="nav2">
+                    <h2>全部商品分类</h2> 
+                    <ul class="middle-leftbox">
+                        <li class="middle-box-one">
+                            <div class="left-one">
+                                <h3 class="yijianjiu"> 一键选酒</h3>
+                                <div class="left-one-down">
+                                    <p>
+                                        <a href="">整箱购</a>
+                                        <a href="">家乡名酒</a>
+                                        <a href="">年份老酒</a>         
+                                    </p>
+                                    <P>
+                                        <a href="">地域名酒</a>
+                                        <a href="">值得买</a>
+                                        <a href="">实惠大坛</a>
+                                    </P>
+                                    <div class="left-one-erji">
+                                        <div class="left-one-two">
+                                        <h4 class="zuida">特色会场</h4> 
+                                        <h4>精选会场</h4>
+                                        <h4>企业用酒</h4> 
+                                        <h4>红洋酒专区</h4>
+                                        <h4>名庄推荐</h4>               
+                                        </div> 
+                                        <div class="left-one-three">
+                                        <div class="left-one-three-one">
+                                         
+                                         <p1>
+                                             <a href="">整箱购</a>
+                                             <a href="">精品酒铺</a>
+                                             <a href="">家乡名酒</a>
+                                             <a href="">年份老酒</a>
+                                             <a href="">有礼有面</a>
+                                             <a href="">海外直采</a>
+                                             <a href="">整箱购</a>
+                                         </p1> 
+                                         </div>
+                                         <div class="left-one-three-two">                                        
+                                         <p2>
+                                             <a class="hot" href="">新鲜品尝</a>
+                                             <a href="">清仓特卖</a>
+                                             <a href="">值得买</a>
+                                             <a class="hot" href="">名优白酒</a>                              
+                                         </p2> 
+                                         </div>
+                                         <div class="left-one-three-three">                                        
+                                         <p2>
+                                             <a href="">商务用酒</a>
+                                             <a href="">员工福利</a>
+                                             <a href="">聚餐用酒</a>
+                                                                      
+                                         </p2> 
+                                         </div>
+                                         <div class="left-one-three-four">                                        
+                                         <p2>
+                                             <a href="">洋酒疯抢</a>
+                                             <a class="hot" href="">整箱特惠</a>
+                                             <a href="">高分推荐</a>
+                                             <a href="">送礼优选</a>                              
+                                         </p2> 
+                                         </div>
+                                         <div class="left-one-three-five">                                        
+                                         <p2>
+                                             <a href="">名庄名窖</a>
+                                             <a class="hot" href="">名庄特卖</a>
+                                                                        
+                                         </p2> 
+                                         </div>
+                                        <div class="left-one-four">
+                                            <img src="img/middle-box-one.jpg">
+                                        </div>   
+
+                                           
+                                        </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                        </li>
+                        <li class="middle-box-two">
+                            <div class="left-two">
+                                <h3 class="baijiu">白酒</h3>
+                                <div class="left-two-down">
+                                    <p class="xiaoshi">
+                                        <a href="">茅台</a>
+                                        <a href="">五粮液</a>
+                                        <a href="">酒鬼</a>
+                                        <a href="">汾酒</a>                                        
+                                    </p>
+                                     <p class="xiaoshi">
+
+                                        <a href="">浓香型</a>
+                                        <a href="">酱香型</a>
+                                        <a href="">贵州</a>
+                                        <a href="">四川</a>
+
+                                    </p>
+                                    <div class="left-two-erji">
+                                        <div class="left-two-two"> 
+                                          <img src="img/侧边栏/2.png">
+                                    </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                        </li>
+                        <li class="middle-left-box-three">
+                            <div class="left-three">
+                                <h3 class="putaojiu">葡萄酒</h3>
+                                <div class="left-three-down">
+                                    <p class="xiaoshi">
+                                        <a href="">茅台</a>
+                                        <a href="">五粮液</a>
+                                        <a href="">酒鬼</a>
+                                        <a href="">汾酒</a>                                        
+                                    </p>
+                                     <p class="xiaoshi">
+
+                                        <a href="">浓香型</a>
+                                        <a href="">酱香型</a>
+                                        <a href="">贵州</a>
+                                        <a href="">四川</a>
+                                    </p>
+                                    <div class="left-three-erji">
+                                        <div class="left-two-two"> 
+                                          <img src="img/侧边栏/3.png">
+                                    </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                        </li>  
+
+
+
+                        <li class="middle-box-four">            
+                            <div class="left-four">
+                                <h3 class="yangjiu">洋酒</h3>
+                                <div class="left-four-down">
+                                    <p class="xiaoshi">
+                                        <a href="">茅台</a>
+                                        <a href="">五粮液</a>
+                                        <a href="">酒鬼</a>
+                                        <a href="">汾酒</a>                                        
+                                    </p>
+                                     <p class="xiaoshi">
+
+                                        <a href="">浓香型</a>
+                                        <a href="">酱香型</a>
+                                        <a href="">贵州</a>
+                                        <a href="">四川</a>
+
+                                    </p>
+                                    <div class="left-four-erji">
+                                        <div class="left-two-two"> 
+                                          <img src="img/侧边栏/4.png">
+                                    </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                        </li>
+                        <li class="middle-box-five">
+                            <div class="left-five">
+                                <h3 class="yangshengjiu">养生酒</h3>
+                                <div class="left-five-down">
+                                    <p class="xiaoshi">
+                                        <a href="">茅台</a>
+                                        <a href="">五粮液</a>
+                                        <a href="">酒鬼</a>
+                                        <a href="">汾酒</a>                                        
+                                    </p>
+                                    <p class="xiaoshi">
+
+                                        <a href="">浓香型</a>
+                                        <a href="">酱香型</a>
+                                        <a href="">贵州</a>
+                                        <a href="">四川</a>
+                                    </p>
+                                        <div class="left-five-erji">
+                                        <div class="left-two-two"> 
+                                          <img src="img/侧边栏/3.png">
+                                    </div>
+                                    </div>
+                                </div>                         
+                            </div>
+                        </li>
+                        <li class="middle-box-six">
+                            <div class="left-six">
+                                <h3 class="shishang">食尚</h3>
+                                <div class="left-six-down">
+                                    <p class="xiaoshi">
+                                        <a href="">茅台</a>
+                                        <a href"">五粮液</a>
+                                        <a href="">酒鬼</a>
+                                        <a href="">汾酒</a>           
+                                    </p> 
+                                    <div class="left-six-erji">
+                                        <div class="left-two-two"> 
+                                          <img src="img/侧边栏/6.png">
+                                    </div>
+                                    </div>
+                                </div>                         
+                            </div>                             
+                        </li>
+                     </ul>
+                </div>
+                      <ul class="navlist">
+                        <li class="home-one"><a href="">首页</a></li>
+                        <li><a href="">领劵中心</a></li>
+                        <li><a href="">文化酒鬼酒</a></li>
+                        <li><a href="">值得买</a></li>
+                        <li><a href="">自营甄选</a></li>
+                        <li><a href="">葡萄酒馆</a></li>
+                        <li><a href="">洋酒馆</a></li>
+                        <li><a href="">新品</a></li>
+                        <li><a href="">CLUB</a></li>                    
+                        
+                      
+                      </ul>
+                  </div>
+                  </div>
+                  <!-- 轮播图 -->
+ <!-- <div class="lunbotu"> -->
+     <div class="lunbotu-box">
+    <ul>
+        <li style="display: block"><img src="img/轮播图/5.jpg"></li>
+        <li><img src="img/轮播图/1.jpg"></li>
+        <li><img src="img/轮播图/2.jpg"></li>
+        <li><img src="img/轮播图/3.jpg"></li>
+        <li><img src="img/轮播图/4.jpg"></li>
+    </ul>
+    <div class="lunbotu-min">
+        <span style="background: black;">1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+    <div class="middle-box-three">        
+        <img src="img/middl-one.png">
+        <img src="img/middl-two.png">
+        <img src="img/middl-three.png">
+    </div>
+    <!-- <a class="left">
+        &lt;</a>
+            <a class="right">&gt;</a> -->
+</div>
+    <!-- 疯狂抢购 -->
+    <div class="menu-qianggou">
+        <div class="submenu-one">
+            <div class="submenu-one-two ">
+                <ul class="tab">
+                   <li class="active">疯狂抢购</li>
+                   <li>爆款推荐</li>
+                   <li>婚庆喜宴</li>
+                   <li>整箱钜惠</li>
+                   <li>精选大牌</li>
+                </ul>
+            <div class="submenu-two">
+                <div class="submenu-two-one1">
+                    <ul>
+                        <li class="products-one">
+                            <div class="products-one-two">
+                                <a href=""> <img src="img/products/products-1-1.jpg">
+                                </a>
+                            </div>
+                            <div class="products-one-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-two">
+                            <div class="products-two-two">
+                                <a href=""> <img src="img/products/products-1-2.png">
+                                </a>
+                            </div>
+                            <div class="products-two-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-three">
+                            <div class="products-three-two">
+                                <a href=""> <img src="img/products/products-1-3.jpg">
+                                </a>
+                            </div>
+                            <div class="products-three-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-three-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-four">
+                            <div class="products-four-two">
+                                <a href=""> <img src="img/products/products-1-4.jpg">
+                                </a>
+                            </div>
+                            <div class="products-four-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-four-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-five">
+                            <div class="products-five-two">
+                                <a href=""> <img src="img/products/products-1-5.jpg">
+                                </a>
+                            </div>
+                            <div class="products-five-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-five-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-six">
+                            <div class="products-six-two">
+                                <a href=""> <img src="img/products/products-1-6.jpg">
+                                </a>
+                            </div>
+                            <div class="products-six-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-six-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-seven">
+                            <div class="products-seven-two">
+                                <a href=""> <img src="img/products/products-1-7.jpg">
+                                </a>
+                            </div>
+                            <div class="products-seven-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-seven-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-eight">
+                            <div class="products-eight-two">
+                                <a href=""> <img src="img/products/products-1-8.jpg">
+                                </a>
+                            </div>
+                            <div class="products-eight-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-eight-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-nine">
+                            <div class="products-nine-two">
+                                <a href=""> <img src="img/products/products-1-9.jpg">
+                                </a>
+                            </div>
+                            <div class="products-nine-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-nine-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products-ten">
+                            <div class="products-ten-two">
+                                <a href=""> <img src="img/products/products-1-10.jpg">
+                                </a>
+                            </div>
+                            <div class="products-ten-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products-ten-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- 疯狂抢购2-爆款抢购 -->
+                <div class="submenu-er-one2">
+                    <ul class="submenu-er-one">
+                        <li class="products2-one">
+                            <div class="products2-one-two">
+                                <a href=""> <img src="img/products/products-2-1.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-one-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-two">
+                            <div class="products2-two-two">
+                                <a href=""> <img src="img/products/products-2-2.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-two-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-three">
+                            <div class="products2-three-two">
+                                <a href=""> <img src="img/products/products-2-3.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-three-three">
+                                <a href=""> 【最后清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-three-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-four">
+                            <div class="products2-four-two">
+                                <a href=""> <img src="img/products/products-2-4.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-four-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-four-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-five">
+                            <div class="products2-five-two">
+                                <a href=""> <img src="img/products/products-2-5.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-five-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-five-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-six">
+                            <div class="products2-six-two">
+                                <a href=""> <img src="img/products/products-2-6.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-six-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-six-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-seven">
+                            <div class="products2-seven-two">
+                                <a href=""> <img src="img/products/products-2-7.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-seven-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-seven-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-eight">
+                            <div class="products2-eight-two">
+                                <a href=""> <img src="img/products/products-2-8.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-eight-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-eight-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-nine">
+                            <div class="products2-nine-two">
+                                <a href=""> <img src="img/products/products-2-9.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-nine-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-nine-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products2-ten">
+                            <div class="products2-ten-two">
+                                <a href=""> <img src="img/products/products-2-10.jpg">
+                                </a>
+                            </div>
+                            <div class="products2-ten-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products2-ten-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+                    <!-- 疯狂抢购3-爆款抢购 -->
+                    <div class="submenu-san-one3">
+                    <ul class="submenu-san-one">
+                        <li class="products3-one">
+                            <div class="products3-one-two">
+                                <a href=""> <img src="img/products/products-3-1.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-one-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-two">
+                            <div class="products3-two-two">
+                                <a href=""> <img src="img/products/products-3-2.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-two-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-three">
+                            <div class="products3-three-two">
+                                <a href=""> <img src="img/products/products-3-3.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-three-three">
+                                <a href=""> 【最后清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-three-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-four">
+                            <div class="products3-four-two">
+                                <a href=""> <img src="img/products/products-3-4.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-four-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-four-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-five">
+                            <div class="products3-five-two">
+                                <a href=""> <img src="img/products/products-3-5.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-five-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-five-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-six">
+                            <div class="products3-six-two">
+                                <a href=""> <img src="img/products/products-3-6.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-six-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-six-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-seven">
+                            <div class="products3-seven-two">
+                                <a href=""> <img src="img/products/products-3-7.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-seven-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-seven-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-eight">
+                            <div class="products3-eight-two">
+                                <a href=""> <img src="img/products/products-3-8.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-eight-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-eight-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-nine">
+                            <div class="products3-nine-two">
+                                <a href=""> <img src="img/products/products-3-9.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-nine-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-nine-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products3-ten">
+                            <div class="products3-ten-two">
+                                <a href=""> <img src="img/products/products-3-10.jpg">
+                                </a>
+                            </div>
+                            <div class="products3-ten-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products3-ten-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- 疯狂抢购4-爆款抢购 -->
+                <div class="submenu-si-one4">
+                    <ul class="submenu-si-one">
+                        <li class="products4-one">
+                            <div class="products4-one-two">
+                                <a href=""> <img src="img/products/products-4-1.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-one-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-two">
+                            <div class="products4-two-two">
+                                <a href=""> <img src="img/products/products-4-2.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-two-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-three">
+                            <div class="products4-three-two">
+                                <a href=""> <img src="img/products/products-4-3.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-three-three">
+                                <a href=""> 【最后清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-three-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-four">
+                            <div class="products4-four-two">
+                                <a href=""> <img src="img/products/products-4-4.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-four-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-four-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-five">
+                            <div class="products4-five-two">
+                                <a href=""> <img src="img/products/products-4-5.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-five-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-five-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-six">
+                            <div class="products4-six-two">
+                                <a href=""> <img src="img/products/products-4-6.png">
+                                </a>
+                            </div>
+                            <div class="products4-six-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-six-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-seven">
+                            <div class="products4-seven-two">
+                                <a href=""> <img src="img/products/products-4-7.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-seven-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-seven-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-eight">
+                            <div class="products4-eight-two">
+                                <a href=""> <img src="img/products/products-4-8.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-eight-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-eight-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-nine">
+                            <div class="products4-nine-two">
+                                <a href=""> <img src="img/products/products-4-9.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-nine-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-nine-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products4-ten">
+                            <div class="products4-ten-two">
+                                <a href=""> <img src="img/products/products-4-10.jpg">
+                                </a>
+                            </div>
+                            <div class="products4-ten-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products4-ten-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- 疯狂抢购5-爆款抢购 -->
+                <div class="submenu-wu-one5">
+                    <ul class="submenu-wu-one">
+                        <li class="products5-one">
+                            <div class="products5-one-two">
+                                <a href=""> <img src="img/products/products-5-1.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-one-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-two">
+                            <div class="products5-two-two">
+                                <a href=""> <img src="img/products/products-5-2.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-two-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-one-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-three">
+                            <div class="products5-three-two">
+                                <a href=""> <img src="img/products/products-5-3.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-three-three">
+                                <a href=""> 【最后清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-three-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-four">
+                            <div class="products5-four-two">
+                                <a href=""> <img src="img/products/products-5-4.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-four-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-four-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-five">
+                            <div class="products5-five-two">
+                                <a href=""> <img src="img/products/products-5-5.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-five-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-five-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-six">
+                            <div class="products5-six-two">
+                                <a href=""> <img src="img/products/products-5-6.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-six-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-six-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-seven">
+                            <div class="products5-seven-two">
+                                 <a href=""> <img src="img/products/products-5-7.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-seven-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-seven-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-eight">
+                            <div class="products5-eight-two">
+                                <a href=""> <img src="img/products/products-5-8.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-eight-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-eight-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-nine">
+                            <div class="products5-nine-two">
+                                <a href=""> <img src="img/products/products-5-9.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-nine-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-nine-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                        <li class="products5-ten">
+                            <div class="products4-ten-two">
+                                <a href=""> <img src="img/products/products-5-10.jpg">
+                                </a>
+                            </div>
+                            <div class="products5-ten-three">
+                                <a href=""> 【清仓】52°泸州老窖醇香经典窖藏9 500ml（6瓶装）  
+                                </a>                                
+                            </div>
+                            <div class="products5-ten-four">
+                                <strong class="products-one-price" 
+                                >￥594.00
+                            </strong>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            </div> 
+        </div>
+            <div class=" products-right">             
+           
+                <div class="products-right-one">
+                    <div class="products-right-one1">
+                        <ul class="cat">
+                            <li class="on">公告信息</li>
+                            <li>促销信息</li>                            
+                        </ul>
+                    </div>
+                <div class="products-right-one2">   
+                    <div class="products-right-one3">
+                       <div class="products-right-one31">
+                        <ul>
+                            <li>
+                                <a href="">新春贺岁 酒仙锦鲤送温暖 </a>
+                            </li>
+                            <li>
+                                <a href="">春节快递停运通知</a>
+                            </li>
+                            <li>
+                                <a href="">仙会员金币权利更新</a>
+                            </li>
+                            <li>
+                                <a href="">2018年酒仙年度好酒友微故事</a>
+                            </li>
+                            <li>
+                                <a href=""> 低度酒水部分地区停运公告2018</a>
+                           </li>
+                            <li>
+                                <a href="">11.11多情红洋会场中奖名单</a>
+                            </li>
+                            
+                        </ul>
+                           
+                       </div> 
+
+                    </div>
+                    <div class="products-right-one4">
+                       <div class="products-right-one41">
+                        <ul>
+                            <li>
+                                <a href="">新品首发</a>
+                            </li>
+                            <li>
+                                <a href="">国台</a>
+                            </li>
+                            <li>
+                                <a href="">炫父行动</a>
+                            </li>
+                            <li>
+                                <a href="">文化酒鬼酒</a>
+                            </li>
+                            <li>
+                                <a href="">茅台专场</a>
+                           </li>
+                            <li>
+                                <a href="">酒仙甄选会场</a>
+                            </li>
+                            
+                        </ul>
+                           
+                       </div> 
+
+                    </div>     
+                </div>   
+                <!-- </div>  --> 
+                        
+            
+                 
+                </div> 
+                 <!-- products-right 轮播图 -->
+                <div class="products-right-two">
+                    <div class="products-lunbotu-box">
+                        <ul>
+                            <li style="display: block"><img src="img/products-轮播图/1.png"></li>
+                            <li><img src="img/products-轮播图/3.jpg"></li>
+                            <li><img src="img/products-轮播图/5.jpg"></li>
+                        </ul>
+                        <div class="products-lunbotu-min">
+                            <span style="background: black;"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        
+                </div>
+                </div>
+                <div class="products-right-three">
+                    <div class="products-lunbotu-box2">
+                        <ul>
+                            <li style="display: block"><img src="img/products-轮播图/1.png"></li>
+                            <li><img src="img/products-轮播图/3.jpg"></li>
+                            <li><img src="img/products-轮播图/5.jpg"></li>
+                        </ul>
+                        <div class="products-lunbotu-min2">
+                            <span style="background: black;"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        
+                        </div>
+                    </div>   
+         </div>
+        </div>
+        <div class="final">
+                <div class="left-two-two"> 
+                  <img src="img/侧边栏/7.png">
+                </div>
+        </div>  
+        </div>
+                   
+                </div>    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ </div>                 
+             
+            
+        
+             
+
+             
+            
+            
+</body>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<!-- <script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script> -->
+<script >
+    $(".main-right .shouji ").mouseenter(   //鼠标划入显示1;
+    function () {
+    $(".main-right").find(".erweima").show();
+    // alert(1);
+     //  $(".shouji .erweima ").show();
+     // }, 
+     //  function () {
+     //   $(".shouji .erweima").hide();   
+    });
+    $(".main-right .shouji ").mouseleave(   //鼠标划入显示1;
+    function () {
+    $(".main-right").find(".erweima").hide();
+    });
+
+     // top隐藏菜单第三个
+        $(".top-three  ").mouseenter(   //鼠标划入显示1;
+        function () {
+        $(".top-three").find(".top-daohang").show();
+        // $(this).next().toggle(500);
+        // alert(1);
+         //  $(".shouji .erweima ").show();
+         // }, 
+         //  function () {
+         //   $(".shouji .erweima").hide();   
+        });
+        $(".top-three ").mouseleave(   //鼠标划入显示1;
+        function () {
+        $(".top-three").find(".top-daohang").hide();
+        });
+         
+
+    // top隐藏菜单第四个
+    $(".top-four").mouseenter(   //鼠标划入显示1;
+        function () {
+        $(".top-four").find(".top-kehu").show();
+        // $(this).next().toggle(500);
+        // alert(1);
+         //  $(".shouji .erweima ").show();
+         // }, 
+         //  function () {
+         //   $(".shouji .erweima").hide();   
+        });
+        $(".top-four ").mouseleave(   //鼠标划入显示1;
+        function () {
+        $(".top-four").find(".top-kehu").hide();
+        });
+        //轮播图
+    var time = null
+    $(".lunbotu-box").hover(function() {
+        clearInterval(time); //移动到box盒子时候 悬停
+    }, function() {
+        time = setInterval(fun, 3000); //每3秒调用一次函数
+    })
+    var num = 0;
+    time = setInterval(fun, 3000);
+
+    function fun() {  //function myfun() {   两个都改为这个才能用，否者需要点击一下才能用。
+        $(".lunbotu-box li").eq(num).stop().fadeOut(3000);
+        num++;
+        if (num > 4) {
+            num = 0;
+        }
+        $(".lunbotu-box li").eq(num).stop().fadeIn(3000);
+        $(".lunbotu-min span").eq(num).css("background", "black").siblings().css("background", "");
+
+    }
+    $(".lunbotu-min span").click(function() {
+        num = $(this).index();
+        $(".lunbotu-box li").eq(num).fadeIn(3000).siblings().fadeOut(3000);
+        $(this).css("background", "black").siblings().css("background", "");
+    })
+
+
+    // $(".right").click(function() {    //右边
+    //     $(".lunbotu-box li").eq(num).stop().fadeOut(3000);
+    //     num++;
+    //     if (num > 4) {
+    //         num = 0;
+    //     }
+    //     $(".lunbotu-box li").eq(num).stop().fadeIn(3000);
+    //     $(".lunbotu-min span").eq(num).css("background", "black").siblings().css("background", "");
+    // })
+
+
+    // $(".left").click(function() {        //左边
+    //     $(".lunbotu-box li").eq(num).stop().fadeOut(3000);
+    //     num--;
+    //     if (num < 0) {
+    //         num = 4;
+    //     }
+    //     $(".lunbotu-box li").eq(num).stop().fadeIn(3000);
+    //     $(".lunbotu-min span").eq(num).css("background", "black").siblings().css("background", "")
+    // });
+
+    //产品标签页切换
+    $(function(){
+        window.onload = function()
+        {
+            var $li = $('.tab li');
+            var $ul = $('.submenu-two ul');
+                        
+            $li.mouseover(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('active');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+            })
+        }   
+    // products-right 产品右边
+     $(document).ready(function () {        
+            var $li = $('.cat li');
+            var $ul = $('.products-right-one2 ul');
+                        
+            $li.mouseover(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('on');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+          
+        });
+    });
+    // products-right 产品右边 轮播图
+    var time = null 
+    $(".products-lunbotu-box").hover(function() {
+        clearInterval(time); //移动到box盒子时候 悬停
+    }, function() {
+        time = setInterval(myfun, 5000); //每3秒调用一次函数
+    })
+    var num = 0;
+    time = setInterval(myfun, 6000);
+
+    function myfun() {
+        $(".products-lunbotu-box li").eq(num).stop().fadeOut(1000);
+        num++;
+        if (num > 2) {
+            num = 0;
+        }
+        $(".products-lunbotu-box li").eq(num).stop().fadeIn(1000);
+        $(".products-lunbotu-min span").eq(num).css("background", "black").siblings().css("background", "");
+        };
+
+        $(".products-lunbotu-min span").click(function() {
+            num = $(this).index();
+            $(".products-lunbotu-box li").eq(num).fadeIn(3000).siblings().fadeOut(3000);
+            $(this).css("background", "black").siblings().css("background", "");
+        });   
+        
+    // products-right 产品右边 轮播图2
+    var time = null 
+    $(".products-lunbotu-box2").hover(function() {
+        clearInterval(time); //移动到box盒子时候 悬停
+    }, function() {
+        time = setInterval(myfun1, 5000); //每3秒调用一次函数
+    })
+    var num = 0;
+    time = setInterval(myfun1, 6000);
+
+    function myfun1() {
+        $(".products-lunbotu-box2 li").eq(num).stop().fadeOut(1000);
+        num++;
+        if (num > 2) {
+            num = 0;
+        }
+        $(".products-lunbotu-box2 li").eq(num).stop().fadeIn(1000);
+        $(".products-lunbotu-min2 span").eq(num).css("background", "black").siblings().css("background", "");
+        };
+
+        $(".products-lunbotu-min2 span").click(function() {
+            num = $(this).index();
+            $(".products-lunbotu-box2 li").eq(num).fadeIn(3000).siblings().fadeOut(3000);
+            $(this).css("background", "black").siblings().css("background", "");
+        })   
+       });     
+        
+        
+        
+
+
+
+    
+    // $(document).ready(function(){
+    //     alert("HELLO WORD");
+
+    // });
+    // $('.main span').hover(function(){
+    //    /*图标向上旋转*/
+    //     $(this).children('span').show('ul');
+    // },function(){
+    //     $(this).children('span').hide('ul');
+
+//     ;
+//     function showsubmenu(ul){
+//         var showsubmenu=li.getElementsByTagName('myjiu li')[0
+//     ]; showsubmenu.style.display="block";}
+//     function showsubmenu(ul){
+//         var showsubmenu=li.getElementsByTagName('myjiu li')[0
+//     ]; showsubmenu.style.display="block";
+// }
+// $("#myjiu").toggle(//动态显示和隐藏
+
+// function () { 
+
+//    $(this).attr("style","display:none;");//隐藏div
+
+// },
+
+// function () {    $(this).attr("style","display:block;");//显示div
+
+// }
+
+
+</script>
+</html>
+
